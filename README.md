@@ -1,2 +1,2 @@
 # facerecognize
-Face recognizer using Clarifai
+A face recognizer using Clarifai
