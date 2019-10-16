@@ -1,20 +1,71 @@
 .App {
+  height: auto;
+  width: 100%;
   text-align: center;
+  user-select: none;
+  letter-spacing: 0.03em;
 }
 
-.center {
+.main {
   display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
   justify-content: center;
+  align-content: center;
+  height: 70vh;
+  width: 100%;
 }
 
-.particles {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  /* z index used with position fixed or absolute. 
-  This css makes sure the background doesn't move 
-  and is behind the content */
+
+.navigation{
+  justify-content: center;
+  flex-flow: row;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+.navigation img{
+  width: 50px;
+  height: 50px;
+}
+.navElement{
+  font-size: 30px;
+  font-weight: 600;
+    align-self: center;
+  /* margin: 20px; */
+ 
+  margin: 40px;
+}
+
+
+.form{
+/* margin-right: 20px; */
+width: 50%;
+height: 35px;
+}
+
+button{
+  border: 0px;
+}
+
+.content{
+  margin: 20px auto;
+  margin-bottom: 20px;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 50%;
+  height: 70vh;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .main {
+    flex-flow: column;
+  }
+  .content{
+    width: 100%;
+    height: 40vh;
+  }
 }

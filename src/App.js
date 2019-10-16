@@ -102,22 +102,19 @@ this.state.input)
     return(
     <div className="App">
     {/* First lay out components here */}
-     <Navigation isSignedIn={this.state.isSignedIn} onRouteChange={this.onRouteChange}/>
-     { this.state.route === 'home' 
-     ? <div>
-        <Logos />
-        <Rank name={this.state.user.name} entries={this.state.user.entries}/>
+     <Navigation/>
+        <Logos/>
+        {/* <Rank name={this.state.user.name} entries={this.state.user.entries}/> */}
+        <div class="main">
+        <div class = "content">
         <ImageLinkForm 
         onInputChange={this.onInputChange} 
           onSubmit={this.onSubmit}/>
+          </div>
+          <div class="content">
         <FaceRecognition box={this.state.box} imageUrl={this.state.imageUrl}/>
+        </div>
      </div>
-     : (
-      this.state.route === 'signin' 
-      ? <Signin loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
-      : <Register loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
-     )
-     }
     </div>
   );
 }
