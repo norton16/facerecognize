@@ -4,6 +4,7 @@
   text-align: center;
   user-select: none;
   letter-spacing: 0.03em;
+  font-weight: 600;
 }
 
 .main {
@@ -11,13 +12,29 @@
   flex-flow: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
   height: 70vh;
   width: 100%;
 }
+
+.content{
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 50%;
+  height: auto;
+}
+
+#imagecontent{
+  justify-content: center;
+  align-items: center;
+}
+
 #result{
   z-index: -2;
 }
+
 #linkform{
   background-color: white;
   z-index: 0;
@@ -30,6 +47,7 @@
   flex-flow: row;
   flex-wrap: wrap;
   z-index: 1;
+  margin-bottom: 10px;
 }
 .navigation img{
   width: 50px;
@@ -40,8 +58,7 @@
   font-weight: 600;
     align-self: center;
   /* margin: 20px; */
- 
-  margin: 40px;
+  margin: 20px;
 }
 
 
@@ -49,23 +66,16 @@
 /* margin-right: 20px; */
 width: auto;
 height: 35px;
+background-color: rgb(233, 233, 232);
+border: 0;
+padding: 5px;
 }
 
 button{
   border: 0px;
 }
 
-.content{
-  margin: 20px auto;
-  margin-bottom: 20px;
-  display: flex;
-  flex-flow: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  width: 50%;
-  height: auto;
-}
+
 
 .in{
   justify-content: center;
@@ -80,8 +90,5 @@ button{
   .content{
     width: 100%;
     height: 40vh;
-  }
-  .navelement{
-    margin: 10px;
   }
 }

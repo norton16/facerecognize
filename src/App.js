@@ -106,14 +106,10 @@ this.state.input)
         <Logos/>
         {/* <Rank name={this.state.user.name} entries={this.state.user.entries}/> */}
         <div class="main">
-        <div class = "content">
         <ImageLinkForm 
         onInputChange={this.onInputChange} 
-          onSubmit={this.onSubmit}/>
-          </div>
-          <div class="content">
+          onSubmit={this.onSubmit}/> 
         <FaceRecognition box={this.state.box} imageUrl={this.state.imageUrl}/>
-        </div>
      </div>
     </div>
   );
